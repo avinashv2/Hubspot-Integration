@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+    container_name: assessment-hubspot
+    ports:
+      - "8000:8000"
+    depends_on:
+      - redis
+    environment:
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
+      - HUBSPOT_CLIENT_SECRET=46e1010b-e328-4989-ac9e-f04802c4d4f8
+      - HUBSPOT_CLIENT_ID=4f85220e-ef1d-4850-96d2-2cad7bb72e4b
+    volumes:
+      - ./backend:/app
+
+  redis:
+    image: redis:latest
+    container_name: redis
+    ports:
+      - "6379:6379"
