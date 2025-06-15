@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.log
+
+# Virtual environment
+venv/
+env/
+
+# VS Code
+.vscode/
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Environment variables / secrets
+.env
+
+# SQLite DBs (optional)
+*.sqlite3
+
+# Migrations (optional)
+migrations/
+
+# Coverage reports
+htmlcov/
+.coverage
+*.cover
+
+# Pytest cache
+.pytest_cache/
+
+# MyPy / Pylint / other tool outputs
+.mypy_cache/
+.pyright/
+.pylint.d/
+
+# Docker (optional)
+*.tar
