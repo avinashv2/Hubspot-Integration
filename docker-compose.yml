@@ -12,8 +12,8 @@ services:
     environment:
       - REDIS_HOST=redis
       - REDIS_PORT=6379
-      - HUBSPOT_CLIENT_SECRET=46e1010b-e328-4989-ac9e-f04802c4d4f8
-      - HUBSPOT_CLIENT_ID=4f85220e-ef1d-4850-96d2-2cad7bb72e4b
+      - HUBSPOT_CLIENT_SECRET=X
+      - HUBSPOT_CLIENT_ID=X
     volumes:
       - ./backend:/app
 
